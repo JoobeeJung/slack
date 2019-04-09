@@ -28,6 +28,11 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public function routeNotificationForSlack()
+    {
+        //Make dynamic
+        return 'https://hooks.slack.com/services/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';
+    }
     /**
      * The attributes that should be cast to native types.
      *
